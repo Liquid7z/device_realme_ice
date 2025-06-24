@@ -44,7 +44,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 
 # Gapps Flags
 WITH_GMS := true
-TARGET_USES_PICO_GAPPS := true
+TARGET_USES_CORE_GAPPS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc=$(call normalize-path-list, "RMX3461-user 13 TP1A.220905.001 R.1119f23-59b8-59b9 release-keys") \
