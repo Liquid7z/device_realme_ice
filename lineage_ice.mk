@@ -14,7 +14,7 @@ $(call inherit-product, device/realme/ice/device.mk)
 # Inherit some common infinity stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := infinity_ice
+PRODUCT_NAME := lineage_ice
 PRODUCT_DEVICE := ice
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -30,10 +30,11 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 # Default is 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# InfinityX Flags
-INFINITY_BUILD_TYPE := OFFICIAL
-INFINITY_MAINTAINER := Debarpan102
+# Flags
+RISING_MAINTAINER := Liquid7z
+TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_BLUR := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 WITH_GAPPS := true
 TARGET_BUILD_GOOGLE_TELEPHONY := true
 USE_MOTO_CALCULATOR := true
