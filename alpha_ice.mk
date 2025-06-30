@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from ice device
 $(call inherit-product, device/realme/ice/device.mk)
 
-# Inherit some common infinity stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_ice
+PRODUCT_NAME := alpha_ice
 PRODUCT_DEVICE := ice
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -31,13 +31,14 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Flags
-RISING_MAINTAINER := Liquid7z
+ALPHA_BUILD_TYPE := Unofficial
+ALPHA_MAINTAINER := Liquid7z
 TARGET_ENABLE_BLUR := true
-TARGET_SUPPORTS_BLUR := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
-WITH_GAPPS := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BUILD_GOOGLE_TELEPHONY := true
 USE_MOTO_CALCULATOR := true
+TARGET_INCLUDE_LAWNCHAIR := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc=$(call normalize-path-list, "RMX3461-user 13 TP1A.220905.001 R.1119f23-59b8-59b9 release-keys") \
