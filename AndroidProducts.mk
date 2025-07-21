@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/alpha_ice.mk
+    $(LOCAL_DIR)/lineage_ice.mk
 
 COMMON_LUNCH_CHOICES := \
-    alpha_ice-user \
-    alpha_ice-userdebug \
-    alpha_ice-eng
+    lineage_ice-user \
+    lineage_ice-userdebug \
+    lineage_ice-eng
