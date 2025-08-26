@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_ice.mk
+    $(LOCAL_DIR)/derp_ice.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_ice-user \
-    infinity_ice-userdebug \
-    infinity_ice-eng
+    derp_ice-user \
+    derp_ice-userdebug \
+    derp_ice-eng
