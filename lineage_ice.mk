@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from ice device
 $(call inherit-product, device/realme/ice/device.mk)
 
-# Inherit some common infinity stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := derp_ice
+PRODUCT_NAME := lineage_ice
 PRODUCT_DEVICE := ice
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -32,10 +32,12 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Lineage Flags
 
+TARGET_DISABLE_EPPE := true
 TARGET_SUPPORTS_BLUR := true
 WITH_GAPPS := true
 TARGET_BUILD_GOOGLE_TELEPHONY := true
 USE_MOTO_CALCULATOR := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc=$(call normalize-path-list, "RMX3461-user 13 TP1A.220905.001 R.1119f23-59b8-59b9 release-keys") \
